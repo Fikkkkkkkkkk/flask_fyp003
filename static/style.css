@@ -1,0 +1,31 @@
+/* Custom Bootstrap Overrides */
+:root {
+    --text-color: #1a1a1a;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--text-color);
+}
+
+/* Landing Page Hero override if needed */
+.landing-hero {
+    padding: 4rem 1rem;
+}
+
+/* Make buttons slightly bolder */
+.btn {
+    font-weight: 600;
+}
+
+/* Card shadow */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Navbar tweaks */
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}

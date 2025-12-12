@@ -1,13 +1,44 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="landing-hero" style="text-align: center; padding: 50px 0;">
-    <h1>Welcome to Flask FYP</h1>
-    <p>A simple and secure way to manage your items.</p>
-    
-    <div class="cta-buttons" style="margin-top: 30px;">
-        <a href="{{ url_for('login') }}" class="button">Login</a>
-        <a href="{{ url_for('register') }}" class="button" style="background-color: #555;">Register</a>
+<div class="landing-hero text-center py-5">
+    <div class="container">
+        <h1 class="display-3 fw-bolder mb-3">Organize your life, simply.</h1>
+        <p class="lead text-muted mb-5">A clean, protected space for your items. No clutter, just focus.</p>
+        
+        <div class="d-flex justify-content-center gap-3">
+            <a href="{{ url_for('register') }}" class="btn btn-dark btn-lg px-5">Start Now</a>
+            <a href="{{ url_for('login') }}" class="btn btn-outline-dark btn-lg px-5">Login</a>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row g-4 text-center">
+        <div class="col-md-4">
+            <div class="card h-100 p-4 border-0 shadow-sm">
+                <div class="card-body">
+                    <h3 class="fw-bold mb-3">Simple</h3>
+                    <p class="text-muted mb-0">Minimalist design means you spend less time figuring things out and more time getting things done.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 p-4 border-0 shadow-sm">
+                <div class="card-body">
+                    <h3 class="fw-bold mb-3">Secure</h3>
+                    <p class="text-muted mb-0">Your data is protected. Built with modern security standards to keep your items safe.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 p-4 border-0 shadow-sm">
+                <div class="card-body">
+                    <h3 class="fw-bold mb-3">Free</h3>
+                    <p class="text-muted mb-0">Open source and free to use locally. Your data stays with you on your machine.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
