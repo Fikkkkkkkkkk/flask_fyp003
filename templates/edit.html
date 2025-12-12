@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Edit Item</h2>
+<form method="POST">
+    <p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="{{ item.name }}" required>
+    </p>
+    <p>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description">{{ item.description }}</textarea>
+    </p>
+    <button type="submit">Update Item</button>
+</form>
+{% endblock %}
